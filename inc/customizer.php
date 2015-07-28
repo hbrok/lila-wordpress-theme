@@ -91,7 +91,7 @@ function lila_customizer_css() {
     ?>
     <style type="text/css">
         .front-page-avatar {
-            background-image: url( <?php echo get_theme_mod( 'lila_front_page_image', '' ); ?> );
+            background-image: url( <?php echo get_theme_mod( 'lila_front_page_image', get_template_directory_uri() . '/images/icon.jpg' ); ?> );
         }
     </style>
     <?php

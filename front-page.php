@@ -7,9 +7,9 @@
       </div>
 
       <div class="col-9">
-        <h1 class="front-page-speech-bubble"><?php echo get_theme_mod( 'lila_front_page_speech_bubble' ); ?></h1>
+        <h1 class="front-page-speech-bubble"><?php echo get_theme_mod( 'lila_front_page_speech_bubble', 'Hello!' ); ?></h1>
         <p class="front-page-blurb">
-          <?php echo get_theme_mod( 'lila_front_page_blurb' ); ?>
+          <?php echo get_theme_mod( 'lila_front_page_blurb', 'I\'m sure you have interesting stuff to say. You should probably put that stuff here.' ); ?>
         </p>
       </div>
     </section>
