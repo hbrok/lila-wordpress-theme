@@ -1,0 +1,61 @@
+/**
+ * ---------------------------------------
+ * General
+ * ---------------------------------------
+ */
+body {
+    font: 100%/1 $font-family;
+    font-weight: 400;
+    color: $font-color;
+    background: url("images/bg.jpg") fixed;
+}
+
+.avatar {
+    border-radius: 100%;
+}
+
+
+/**
+ * ---------------------------------------
+ * Links
+ * ---------------------------------------
+ */
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover;
+    }
+
+    &:active,
+    &:focus {
+        outline: 1;
+    }
+}
+
+.post-content a,
+.comment-content a {
+    text-decoration: underline;
+}
+
+
+/**
+ * ---------------------------------------
+ * Tables
+ * ---------------------------------------
+ */
+th,
+td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid $light-gray;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+    }
+}

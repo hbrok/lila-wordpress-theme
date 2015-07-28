@@ -1,0 +1,162 @@
+/**
+ * ---------------------------------------
+ * Headings
+ * ---------------------------------------
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-family: $heading-font-family;
+  font-weight: normal;
+  color: $heading-font-color;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 1;
+
+  @media #{$breakpoint-medium} {
+    font-size: 2.5rem;
+    line-height: 1.125;
+  }
+
+  @media #{$breakpoint-large} {
+    font-size: 2.75em;
+    line-height: 1.25;
+  }
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1;
+
+  @media #{$breakpoint-medium} {
+    font-size: 2rem;
+    line-height: 1.125;
+  }
+
+  @media #{$breakpoint-large} {
+    font-size: 2.25em;
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.13636364;
+
+  @media #{$breakpoint-medium} {
+    font-size: 1.75em;
+    line-height: 1.25;
+  }
+
+  @media #{$breakpoint-large} {
+    font-size: 2em;
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.25em;
+  line-height: 1.22222222;
+
+  @media #{$breakpoint-medium} {
+    font-size: 1.5em;
+  }
+
+  @media #{$breakpoint-large} {
+    font-size: 1.75em;
+  }
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+.fancy-heading {
+  font-family: $fancy-font-family;
+  @include text-shadow;
+}
+
+
+/**
+ * ---------------------------------------
+ * Body
+ * ---------------------------------------
+ */
+.page {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+p {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/**
+ * ---------------------------------------
+ * Lists
+ * ---------------------------------------
+ */
+ol,
+ul {
+  margin: 1.5em 0 2em 2em;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+/**
+ * ---------------------------------------
+ * Code
+ * ---------------------------------------
+ */
+code {
+  padding: .1rem .3rem;
+  margin: 0 .2rem;
+  font-size: 80%;
+  background: lighten($light-gray, 7%);
+  border: 1px solid $light-gray;
+  border-radius: $global-radius;
+  // white-space: nowrap;
+  overflow: auto;
+}
+
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+  overflow: auto;
+}
+
+/**
+ * ---------------------------------------
+ * Spacing
+ * ---------------------------------------
+ */
+pre,
+blockquote,
+form,
+dl,
+figure,
+table {
+    margin-bottom: 2.5em;
+}

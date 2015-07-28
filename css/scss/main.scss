@@ -1,0 +1,33 @@
+/*!
+Theme Name: Lila
+Theme URI:
+Author: Heather Brokmeier
+Author URI: http://www.heatherbrokmeier.com/
+Description: Theme for my personal website.
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lila
+Tags:
+*/
+
+@import "partials/mixins";
+@import "partials/variables";
+
+@import "vendor/normalize";
+@import "vendor/flexslider";
+@import "vendor/flexslider-extension";
+@import "vendor/entypo";
+
+@import "partials/base";
+@import "partials/typography";
+
+@import "partials/grid";
+@import "partials/navigation";
+@import "partials/footer";
+@import "partials/posts";
+@import "partials/forms";
+
+@import "partials/front-page";
+
+@import "partials/wp-core";

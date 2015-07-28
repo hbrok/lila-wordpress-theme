@@ -1,0 +1,61 @@
+/**
+ * ---------------------------------------
+ * Grid
+ * ---------------------------------------
+ */
+  $grid-columns: 12;
+$grid-max-width: 1000px;
+
+
+/**
+ * ---------------------------------------
+ * Breakpoints
+ * ---------------------------------------
+ */
+ $breakpoint-small: "only screen and (min-width: 400px)";
+$breakpoint-medium: "only screen and (min-width: 750px)";
+ $breakpoint-large: "only screen and (min-width: 1000px)";
+
+
+/**
+ * ---------------------------------------
+ * General Styles
+ * ---------------------------------------
+ */
+$global-radius: 6px;
+
+
+/**
+ * ---------------------------------------
+ * Colors
+ * ---------------------------------------
+ */
+    $trendy-pink: #855e9b;
+  $lavender-grey: #c9b2d6;
+$lavender-purple: #9d7cb0;
+    $white-lilac: #f6eefa;
+        $tundora: #444;
+     $light-gray: #e1e1e1;
+      $dark-gray: #333;
+
+        $primary-color: $lavender-grey;
+      $secondary-color: $lavender-purple;
+
+            $font-color: $tundora;
+  $secondary-font-color: $white-lilac;
+
+            $link-color: $trendy-pink;
+            $link-hover: $primary-color;
+
+
+/**
+ * ---------------------------------------
+ * Typography
+ * ---------------------------------------
+ */
+        $font-family: "Open Sans", Arial, sans-serif;
+$heading-font-family: Bitter, Georgia, serif;
+  $fancy-font-family: Pacifico, cursive;
+
+ $heading-font-color: $trendy-pink;
+

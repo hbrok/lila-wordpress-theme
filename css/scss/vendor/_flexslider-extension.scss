@@ -1,0 +1,30 @@
+/*
+ *  FlexSlider
+ */
+.flexslider {
+    margin: 0;
+    margin-bottom: 1em;
+
+    @media #{$breakpoint-medium} {
+        float: right;
+        width: 60%;
+        margin: 2em 0 2em 2em;
+    }
+
+    li {
+        margin-bottom: 0;
+    }
+}
+
+.flex-direction-nav a {
+    color: #000;
+}
+
+.flex-control-paging li a {
+    background-color: #fff;
+
+    &.flex-active,
+    &:hover {
+        background-color: #aeaeae;
+    }
+}

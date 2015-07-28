@@ -1,0 +1,28 @@
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin text-shadow {
+    text-shadow: 1px 1px 1px rgba(157, 124, 176, 1);
+}
+
+@mixin scalloped-border($img) {
+    content: '';
+    height: 27px;
+    width: 100%;
+    background-image: url($img);
+    background-size: 27px 9px;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    position: absolute;
+    left: 0;
+    top: -9px;
+}

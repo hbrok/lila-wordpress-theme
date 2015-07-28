@@ -1,0 +1,57 @@
+/**
+ * ---------------------------------------
+ * Main Header
+ * ---------------------------------------
+ */
+.main-header {
+    margin-bottom: 2em;
+    background-color: $primary-color;
+
+    a {
+        @include text-shadow;
+        color: $secondary-font-color;
+
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.main-logo {
+    padding-top: 0.25em;
+    font-family: 'Pacifico';
+    font-size: 1.5em;
+    line-height: 1;
+    text-align: center;
+
+    @media #{$breakpoint-medium} {
+        float: left;
+    }
+}
+
+
+
+/**
+ * ---------------------------------------
+ * Navigation
+ * ---------------------------------------
+ */
+.main-nav {
+    margin: 0.75em 0;
+    padding: 0;
+    text-align: center;
+
+    @media #{$breakpoint-medium} {
+        text-align: right;
+    }
+
+    li {
+       display: inline-block;
+
+        a {
+            display: inline-block;
+            padding: 0.75em;
+            font-weight: 200;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/**
+ * ---------------------------------------
+ * Footer
+ * ---------------------------------------
+ */
+
+.main-footer {
+    position: relative;
+    padding-top: 3em 0;
+    background-color: $secondary-color;
+    color: $secondary-font-color;
+    text-align: center;
+
+    &:before {
+        @include scalloped-border("images/border-two.png");
+    }
+
+    .fancy-heading {
+        font-weight: normal;
+        text-align: center;
+        color: $secondary-font-color;
+    }
+}
+
+.project-title {
+    font-size: 0.75em;
+    color: $secondary-font-color;
+    @include text-shadow;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.footer-links {
+    a {
+        &[class^="icon-"]:before,
+        &[class*=" icon-"]:before {
+            font-size: 300%;
+            text-decoration: none;
+            color: $secondary-font-color;
+        }
+
+        &[class^="icon-"]:hover:before,
+        &[class*=" icon-"]:hover:before {
+            color: darken($secondary-font-color, 10%);
+        }
+    }
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  color: $secondary-color;
+}

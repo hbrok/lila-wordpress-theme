@@ -1,0 +1,107 @@
+/**
+ * ---------------------------------------
+ * Posts
+ * ---------------------------------------
+ */
+.post,
+.comments,
+.comment-body {
+    @extend %clearfix;
+}
+
+.post-thumbnail {
+    text-align: center;
+}
+
+.post-content {
+    @extend %clearfix;
+    margin: 1em 0 0 0;
+    padding: 0 1em 2em 1em;
+    border-top: 3px solid $primary-color;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.author-meta {
+    position: relative;
+    float: left;
+    background-color: $primary-color;
+    font-size: 0.85em;
+    color: $secondary-font-color;
+    text-align: center;
+
+    a:hover {
+        color: $secondary-color;
+    }
+
+    &:after   {
+        @include scalloped-border("images/border-three.png");
+        top: auto;
+        bottom: -27px;
+    }
+}
+
+
+
+/**
+ * ---------------------------------------
+ * Comments
+ * ---------------------------------------
+ */
+.comments {
+    margin: 0 auto;
+
+    @media #{$breakpoint-medium} {
+        width: 80%;
+    }
+}
+.comment-list {
+    margin: 0;
+}
+
+.comment-list {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.comment {
+    padding-right: 0;
+    list-style-type: none;
+
+    &.depth-2 {
+        .comment-body {
+            background: lighten($light-gray, 7%);
+        }
+    }
+
+    &.depth-3 {
+        .comment-body {
+            background: lighten($light-gray, 3%);
+        }
+    }
+}
+
+.comment-body {
+    padding: 1em;
+    border-top: 3px solid $primary-color;
+
+    .avatar {
+        float: left;
+        margin: 0 1em 0 0;
+    }
+}
+
+.edit-link {
+    /* make space between comment date and "edit" link */
+    margin: 0 0 0 1em;
+}
+
+.says {
+    display: none;
+}
+
+.comment-awaiting-moderation {
+    font-style: italic;
+}
+
+.comment-content {
+   margin: 2em 0 0 0;
+}

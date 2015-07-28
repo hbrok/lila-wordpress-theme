@@ -1,0 +1,63 @@
+/**
+ * ---------------------------------------
+ * Grid
+ * http://webdesign.tutsplus.com/tutorials/a-simple-responsive-grid-made-even-better-with-sass--cms-21540
+ * ---------------------------------------
+ */
+
+*, *:after, *:before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+ }
+
+img {
+	width: auto;
+	max-width: 100%;
+	height: auto !important;
+}
+
+.wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.wrapper, .row {
+	@extend %clearfix;
+}
+
+@for $i from 1 through $grid-columns {
+	.col-#{$i} {
+		float: left;
+		padding: 1em;
+		width: 100%;
+		min-height: 1px;
+	}
+}
+
+@media #{$breakpoint-small} {
+	.wrapper {
+		width: 95%;
+		max-width: $grid-max-width;
+	}
+}
+
+@media #{$breakpoint-medium} {
+	.wrapper {
+		width: 90%;
+		max-width: $grid-max-width;
+	}
+
+	@for $i from 1 through $grid-columns {
+		.col-#{$i} {
+			width: 100% / $grid-columns * $i;
+		}
+	}
+}
+
+@media #{$breakpoint-large} {
+	.wrapper {
+		width: 85%;
+		max-width: $grid-max-width;
+	}
+}
